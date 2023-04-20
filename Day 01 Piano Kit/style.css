@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #303030;
+}
+
+.keys {
+  display: flex;
+}
+
+.key {
+  height: 100px;
+  width: 100px;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  border: #b7d0ff 5px solid;
+  transition: all .07s;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+  cursor:default;
+  user-select: none;
+}
+
+kbd {
+  font-size: 50px;
+  display: block;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #5888e0;
+    box-shadow: 0 0 10px #5888e0;
+}
+
+.hint{
+  color: #fff;
+  text-shadow: 0 0 2px #fff;
+  display: block;
+  margin: 1rem;
+}

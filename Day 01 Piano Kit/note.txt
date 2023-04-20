@@ -1,0 +1,7 @@
+2022/07/09
+1. data-key
+2. audio.currentTime
+3. e.propertyName
+4. addEventListener: 'transitionend'
+5. kbd tag
+6. [data-key="${e.keyCode}"]
