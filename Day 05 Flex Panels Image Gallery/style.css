@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-style: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:befor,
+*:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.panel {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  font-size: 20px;
+}
+
+.panel_1 {
+  background-color: rgb(238, 184, 184);
+}
+
+.panel_2 {
+  background-color: rgb(206, 125, 125);
+}
+
+.panel_3 {
+  background-color: rgb(171, 144, 144);
+}
+
+.panel_4 {
+  background-color: rgb(253, 132, 132);
+}
+
+.panel_5 {
+  background-color: rgb(172, 67, 67);
+}
+
+/* Flex Children */
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(140, 135, 135, 0.72),
+    0 0 14px rgba(199, 198, 198, 0.45);
+}
+
+.panel p:nth-child(2) {
+  /* font-size: 4rem; */
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
